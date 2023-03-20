@@ -10,7 +10,8 @@ import GamesIcon from "@mui/icons-material/Games";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import ToggleOffIcon from "@mui/icons-material/ToggleOff";
 import ToggleOnIcon from "@mui/icons-material/ToggleOn";
-import { color, fontSize } from "@mui/system";
+
+import FolderIcon from "@mui/icons-material/Folder";
 
 const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
   const darkIcons = {
@@ -21,6 +22,17 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
     color: "#fff",
     fontSize: "60px",
   };
+
+  const smollIconsStyleDark = {
+    color: "#0066CC",
+    fontSize: "18px",
+  };
+
+  const smollIconsStyleLight = {
+    color: "#0066CC",
+    fontSize: "18px",
+  };
+
   return (
     <>
       <S.MakeItRow>
@@ -87,7 +99,19 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
               <p className="title-bar-p">Explorer</p>
             </S.TitleBar>
             <S.SideOptions>
-              
+              <S.AboutMe>
+              <S.SmollIcons>
+                <FolderIcon
+                  style={
+                    luminosity === "light"
+                      ? smollIconsStyleLight
+                      : smollIconsStyleDark
+                  }
+                />
+                </S.SmollIcons>
+                Sobre Mim
+              </S.AboutMe>
+              <S.Professional>Experiência</S.Professional>
             </S.SideOptions>
           </S.MakeItColumn>
         </S.SideMenu>

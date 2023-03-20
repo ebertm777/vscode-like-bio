@@ -55,14 +55,16 @@ export const SideMenu = styled.div`
 `;
 
 export const TitleBar = styled.section`
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   height: 60px;
   width: 260px;
   background: #21252b;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  font-family: "Ubuntu", sans-serif;
 
   .title-bar-p {
     margin-left: 18px;
@@ -75,4 +77,39 @@ export const SideOptions = styled.div`
   width: 100%;
   height: 100%;
   background: #333842;
+`;
+
+export const AboutMe = styled.section`
+  @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
+  font-family: "Source Code Pro", monospace;
+
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: #eaeff2;
+  cursor: pointer;
+`;
+
+export const Professional = styled.section`
+  @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Ubuntu&display=swap");
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+`;
+
+export const Githug = styled.section`
+  @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Ubuntu&display=swap");
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+`;
+
+export const Gaming = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Ubuntu&display=swap");
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+`;
+
+export const SmollIcons = styled.div`
+  margin-right: 5px;
+  margin-left: 16px;
 `;
