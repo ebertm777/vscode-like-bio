@@ -97,14 +97,14 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
 
           <S.SideMenu>
             <S.MakeItColumn>
-              <S.TitleBar>
+              <S.TitleBar isLighty={luminosity === "light"}>
                 <p className="title-bar-p">Explorer</p>
               </S.TitleBar>
-              <S.Choose>
+              <S.Choose isLighty={luminosity === "light"}>
                 <p className="choose-bar-p">Escolha uma opção</p>
               </S.Choose>
-              <S.SideOptions>
-                <S.AboutMe>
+              <S.SideOptions isLighty={luminosity === "light"}>
+                <S.AboutMe isLighty={luminosity === "light"}>
                   <S.SmollIcons>
                     <FolderIcon
                       style={
@@ -116,7 +116,7 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
                   </S.SmollIcons>
                   Sobre Mim
                 </S.AboutMe>
-                <S.Dados>
+                <S.Dados isLighty={luminosity === "light"}>
                   <S.SmollIcons>
                     <ContactMailIcon
                       style={

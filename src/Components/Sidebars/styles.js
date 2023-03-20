@@ -69,6 +69,13 @@ export const TitleBar = styled.section`
   .title-bar-p {
     margin-left: 18px;
   }
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      background: #f0f0f0f0;
+      color: #21252b;
+    `}
 `;
 
 export const SideOptions = styled.div`
@@ -77,6 +84,13 @@ export const SideOptions = styled.div`
   width: 100%;
   height: 100%;
   background: #21252b;
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      background: #f0f0f0f0;
+      color: #21252b;
+    `}
 `;
 
 export const AboutMe = styled.section`
@@ -88,6 +102,13 @@ export const AboutMe = styled.section`
   margin-top: 20px;
   color: #eaeff2;
   cursor: pointer;
+  
+  ${(props) =>
+    props.isLighty &&
+    css`
+      color: #21252b;
+      font-weight: bold;
+    `}
 `;
 
 export const Professional = styled.section`
@@ -132,6 +153,13 @@ export const Dados = styled.div`
   margin-top: 20px;
   color: #eaeff2;
   cursor: pointer;
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      color: #21252b;
+      font-weight: bold;
+    `}
 `;
 
 export const SmollIcons = styled.div`
@@ -140,18 +168,25 @@ export const SmollIcons = styled.div`
 `;
 
 export const Choose = styled.section`
-  @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@200&display=swap");
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   height: 40px;
   width: 260px;
   background: #333842;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Work Sans", sans-serif;
 
   .choose-bar-p {
     margin-left: 18px;
   }
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      background: #fff;
+      color: #333842;
+    `}
 `;

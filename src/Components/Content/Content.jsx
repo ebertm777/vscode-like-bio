@@ -6,7 +6,9 @@ const Content = ({ setPageView, setLuminosity, pageView, luminosity }) => {
   return (
     <>
       <>
-        <S.ContentContainer></S.ContentContainer>
+        <S.ContentContainer isLighty={luminosity === "light"}>
+          <p> teste</p>
+        </S.ContentContainer>
       </>
     </>
   );
