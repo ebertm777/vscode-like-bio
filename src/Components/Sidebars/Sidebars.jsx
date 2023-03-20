@@ -14,7 +14,14 @@ import ToggleOnIcon from "@mui/icons-material/ToggleOn";
 import FolderIcon from "@mui/icons-material/Folder";
 import ContactMailIcon from "@mui/icons-material/ContactMail";
 
-const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
+const Sidebars = ({
+  setPageView,
+  setLuminosity,
+  pageView,
+  luminosity,
+  content,
+  setContent,
+}) => {
   const darkIcons = {
     color: "#333842",
     fontSize: "60px",
@@ -104,7 +111,12 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
                 <p className="choose-bar-p">Escolha uma opção</p>
               </S.Choose>
               <S.SideOptions isLighty={luminosity === "light"}>
-                <S.AboutMe isLighty={luminosity === "light"}>
+                <S.AboutMe
+                  onClick={() => {
+                    setContent("aboutMe");
+                  }}
+                  isLighty={luminosity === "light"}
+                >
                   <S.SmollIcons>
                     <FolderIcon
                       style={
@@ -116,7 +128,12 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
                   </S.SmollIcons>
                   Sobre Mim
                 </S.AboutMe>
-                <S.Dados isLighty={luminosity === "light"}>
+                <S.Dados
+                  onClick={() => {
+                    setContent("contact");
+                  }}
+                  isLighty={luminosity === "light"}
+                >
                   <S.SmollIcons>
                     <ContactMailIcon
                       style={
