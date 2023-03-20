@@ -82,7 +82,6 @@ export const SideOptions = styled.div`
 export const AboutMe = styled.section`
   @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap");
   font-family: "Source Code Pro", monospace;
-
   font-size: 16px;
   display: flex;
   flex-direction: row;
@@ -95,18 +94,44 @@ export const Professional = styled.section`
   @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Ubuntu&display=swap");
   font-family: "Asap", sans-serif;
   font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: #eaeff2;
+  cursor: pointer;
 `;
 
 export const Githug = styled.section`
   @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Ubuntu&display=swap");
   font-family: "Asap", sans-serif;
   font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: #eaeff2;
+  cursor: pointer;
 `;
 
 export const Gaming = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Ubuntu&display=swap");
   font-family: "Asap", sans-serif;
   font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: #eaeff2;
+  cursor: pointer;
+`;
+
+export const Dados = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Asap:wght@300&family=Ubuntu&display=swap");
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  color: #eaeff2;
+  cursor: pointer;
 `;
 
 export const SmollIcons = styled.div`

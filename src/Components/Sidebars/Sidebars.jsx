@@ -12,6 +12,7 @@ import ToggleOffIcon from "@mui/icons-material/ToggleOff";
 import ToggleOnIcon from "@mui/icons-material/ToggleOn";
 
 import FolderIcon from "@mui/icons-material/Folder";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
 
 const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
   const darkIcons = {
@@ -100,8 +101,20 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
             </S.TitleBar>
             <S.SideOptions>
               <S.AboutMe>
+                <S.SmollIcons>
+                  <FolderIcon
+                    style={
+                      luminosity === "light"
+                        ? smollIconsStyleLight
+                        : smollIconsStyleDark
+                    }
+                  />
+                </S.SmollIcons>
+                Sobre Mim
+              </S.AboutMe>
+              <S.Dados>
               <S.SmollIcons>
-                <FolderIcon
+                <ContactMailIcon
                   style={
                     luminosity === "light"
                       ? smollIconsStyleLight
@@ -109,9 +122,9 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
                   }
                 />
                 </S.SmollIcons>
-                Sobre Mim
-              </S.AboutMe>
-              <S.Professional>Experiência</S.Professional>
+                Contato
+              </S.Dados>
+              <S.Professional></S.Professional>
             </S.SideOptions>
           </S.MakeItColumn>
         </S.SideMenu>
