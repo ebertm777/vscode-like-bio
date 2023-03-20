@@ -14,7 +14,21 @@ const Content = ({
     <>
       <>
         <S.ContentContainer isLighty={luminosity === "light"}>
-          {content === "aboutMe" && <p> teste</p>}
+          {content === "aboutMe" && (
+            <>
+              <p> teste</p>
+              <p> teste</p>
+              <p> teste</p>
+            </>
+          )}
+
+          {content === 'contact' && (
+            <>
+              <p> outro</p>
+              <p> teste</p>
+              <p> outro</p>
+            </>
+          )}
         </S.ContentContainer>
       </>
     </>
