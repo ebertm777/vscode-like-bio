@@ -25,7 +25,7 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
   };
 
   const smollIconsStyleDark = {
-    color: "#0066CC",
+    color: "#FEDE00",
     fontSize: "18px",
   };
 
@@ -35,101 +35,106 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
   };
 
   return (
-    <>
-      <S.MakeItRow>
-        <S.SideContainer isLighty={luminosity === "light"}>
-          <S.Icons isLighty={luminosity === "light"}>
-            <ContactPageIcon
-              style={luminosity === "light" ? darkIcons : lightIcons}
-            />
-          </S.Icons>
-          <S.Icons isLighty={luminosity === "light"}>
-            <EngineeringIcon
-              style={luminosity === "light" ? darkIcons : lightIcons}
-            />
-          </S.Icons>
-          <S.Icons isLighty={luminosity === "light"}>
-            <GitHubIcon
-              style={luminosity === "light" ? darkIcons : lightIcons}
-            />
-          </S.Icons>
-          <S.Icons isLighty={luminosity === "light"}>
-            <GamesIcon
-              style={luminosity === "light" ? darkIcons : lightIcons}
-            />
-          </S.Icons>
-
-          <S.SecondGroup>
-            {luminosity === "dark" && (
-              <S.Icons
-                isLighty={luminosity === "light"}
-                onClick={() => {
-                  setLuminosity("light");
-                }}
-              >
-                <ToggleOffIcon
-                  style={luminosity === "light" ? darkIcons : lightIcons}
-                />
-              </S.Icons>
-            )}
-
-            {luminosity === "light" && (
-              <S.Icons
-                isLighty={luminosity === "light"}
-                onClick={() => {
-                  setLuminosity("dark");
-                }}
-              >
-                <ToggleOnIcon
-                  style={luminosity === "light" ? darkIcons : lightIcons}
-                />
-              </S.Icons>
-            )}
-
+    <S.MakeItRow>
+      {pageView === "initial" && (
+        <>
+          <S.SideContainer isLighty={luminosity === "light"}>
             <S.Icons isLighty={luminosity === "light"}>
-              <AccountCircleIcon
+              <ContactPageIcon
                 style={luminosity === "light" ? darkIcons : lightIcons}
               />
             </S.Icons>
-          </S.SecondGroup>
-        </S.SideContainer>
+            <S.Icons isLighty={luminosity === "light"}>
+              <EngineeringIcon
+                style={luminosity === "light" ? darkIcons : lightIcons}
+              />
+            </S.Icons>
+            <S.Icons isLighty={luminosity === "light"}>
+              <GitHubIcon
+                style={luminosity === "light" ? darkIcons : lightIcons}
+              />
+            </S.Icons>
+            <S.Icons isLighty={luminosity === "light"}>
+              <GamesIcon
+                style={luminosity === "light" ? darkIcons : lightIcons}
+              />
+            </S.Icons>
 
-        <S.SideMenu>
-          <S.MakeItColumn>
-            <S.TitleBar>
-              <p className="title-bar-p">Explorer</p>
-            </S.TitleBar>
-            <S.SideOptions>
-              <S.AboutMe>
-                <S.SmollIcons>
-                  <FolderIcon
-                    style={
-                      luminosity === "light"
-                        ? smollIconsStyleLight
-                        : smollIconsStyleDark
-                    }
+            <S.SecondGroup>
+              {luminosity === "dark" && (
+                <S.Icons
+                  isLighty={luminosity === "light"}
+                  onClick={() => {
+                    setLuminosity("light");
+                  }}
+                >
+                  <ToggleOffIcon
+                    style={luminosity === "light" ? darkIcons : lightIcons}
                   />
-                </S.SmollIcons>
-                Sobre Mim
-              </S.AboutMe>
-              <S.Dados>
-              <S.SmollIcons>
-                <ContactMailIcon
-                  style={
-                    luminosity === "light"
-                      ? smollIconsStyleLight
-                      : smollIconsStyleDark
-                  }
+                </S.Icons>
+              )}
+
+              {luminosity === "light" && (
+                <S.Icons
+                  isLighty={luminosity === "light"}
+                  onClick={() => {
+                    setLuminosity("dark");
+                  }}
+                >
+                  <ToggleOnIcon
+                    style={luminosity === "light" ? darkIcons : lightIcons}
+                  />
+                </S.Icons>
+              )}
+
+              <S.Icons isLighty={luminosity === "light"}>
+                <AccountCircleIcon
+                  style={luminosity === "light" ? darkIcons : lightIcons}
                 />
-                </S.SmollIcons>
-                Contato
-              </S.Dados>
-              <S.Professional></S.Professional>
-            </S.SideOptions>
-          </S.MakeItColumn>
-        </S.SideMenu>
-      </S.MakeItRow>
-    </>
+              </S.Icons>
+            </S.SecondGroup>
+          </S.SideContainer>
+
+          <S.SideMenu>
+            <S.MakeItColumn>
+              <S.TitleBar>
+                <p className="title-bar-p">Explorer</p>
+              </S.TitleBar>
+              <S.Choose>
+                <p className="choose-bar-p">Escolha uma opção</p>
+              </S.Choose>
+              <S.SideOptions>
+                <S.AboutMe>
+                  <S.SmollIcons>
+                    <FolderIcon
+                      style={
+                        luminosity === "light"
+                          ? smollIconsStyleLight
+                          : smollIconsStyleDark
+                      }
+                    />
+                  </S.SmollIcons>
+                  Sobre Mim
+                </S.AboutMe>
+                <S.Dados>
+                  <S.SmollIcons>
+                    <ContactMailIcon
+                      style={
+                        luminosity === "light"
+                          ? smollIconsStyleLight
+                          : smollIconsStyleDark
+                      }
+                    />
+                  </S.SmollIcons>
+                  Contato
+                </S.Dados>
+                <S.Professional></S.Professional>
+              </S.SideOptions>
+            </S.MakeItColumn>
+          </S.SideMenu>
+        </>
+      )}
+    </S.MakeItRow>
   );
 };
 

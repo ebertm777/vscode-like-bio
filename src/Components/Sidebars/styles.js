@@ -76,7 +76,7 @@ export const SideOptions = styled.div`
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background: #333842;
+  background: #21252b;
 `;
 
 export const AboutMe = styled.section`
@@ -137,4 +137,21 @@ export const Dados = styled.div`
 export const SmollIcons = styled.div`
   margin-right: 5px;
   margin-left: 16px;
+`;
+
+export const Choose = styled.section`
+  @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+  color: #fff;
+  font-size: 18px;
+  height: 40px;
+  width: 260px;
+  background: #333842;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: "Ubuntu", sans-serif;
+
+  .choose-bar-p {
+    margin-left: 18px;
+  }
 `;
