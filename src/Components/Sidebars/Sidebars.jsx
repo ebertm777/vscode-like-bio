@@ -16,72 +16,81 @@ const Sidebars = ({ setPageView, setLuminosity, pageView, luminosity }) => {
   const darkIcons = {
     color: "#333842",
     fontSize: "60px",
-    
   };
   const lightIcons = {
     color: "#fff",
     fontSize: "60px",
-   
   };
   return (
     <>
-    <S.MakeItRow>
-      <S.SideContainer isLighty={luminosity === "light"}>
-        <S.Icons isLighty={luminosity === "light"}>
-          <ContactPageIcon
-            style={luminosity === "light" ? darkIcons : lightIcons}
-          />
-        </S.Icons>
-        <S.Icons isLighty={luminosity === "light"}>
-          <EngineeringIcon
-            style={luminosity === "light" ? darkIcons : lightIcons}
-          />
-        </S.Icons>
-        <S.Icons isLighty={luminosity === "light"}>
-          <GitHubIcon style={luminosity === "light" ? darkIcons : lightIcons} />
-        </S.Icons>
-        <S.Icons isLighty={luminosity === "light"}>
-          <GamesIcon style={luminosity === "light" ? darkIcons : lightIcons} />
-        </S.Icons>
-
-        <S.SecondGroup>
-          {luminosity === "dark" && (
-            <S.Icons
-              isLighty={luminosity === "light"}
-              onClick={() => {
-                setLuminosity("light");
-              }}
-            >
-              <ToggleOffIcon
-                style={luminosity === "light" ? darkIcons : lightIcons}
-              />
-            </S.Icons>
-          )}
-
-          {luminosity === "light" && (
-            <S.Icons
-              isLighty={luminosity === "light"}
-              onClick={() => {
-                setLuminosity("dark");
-              }}
-            >
-              <ToggleOnIcon
-                style={luminosity === "light" ? darkIcons : lightIcons}
-              />
-            </S.Icons>
-          )}
-
+      <S.MakeItRow>
+        <S.SideContainer isLighty={luminosity === "light"}>
           <S.Icons isLighty={luminosity === "light"}>
-            <AccountCircleIcon
+            <ContactPageIcon
               style={luminosity === "light" ? darkIcons : lightIcons}
             />
           </S.Icons>
-        </S.SecondGroup>
-      </S.SideContainer>
+          <S.Icons isLighty={luminosity === "light"}>
+            <EngineeringIcon
+              style={luminosity === "light" ? darkIcons : lightIcons}
+            />
+          </S.Icons>
+          <S.Icons isLighty={luminosity === "light"}>
+            <GitHubIcon
+              style={luminosity === "light" ? darkIcons : lightIcons}
+            />
+          </S.Icons>
+          <S.Icons isLighty={luminosity === "light"}>
+            <GamesIcon
+              style={luminosity === "light" ? darkIcons : lightIcons}
+            />
+          </S.Icons>
 
-    <S.SideMenu>
-     
-    </S.SideMenu>
+          <S.SecondGroup>
+            {luminosity === "dark" && (
+              <S.Icons
+                isLighty={luminosity === "light"}
+                onClick={() => {
+                  setLuminosity("light");
+                }}
+              >
+                <ToggleOffIcon
+                  style={luminosity === "light" ? darkIcons : lightIcons}
+                />
+              </S.Icons>
+            )}
+
+            {luminosity === "light" && (
+              <S.Icons
+                isLighty={luminosity === "light"}
+                onClick={() => {
+                  setLuminosity("dark");
+                }}
+              >
+                <ToggleOnIcon
+                  style={luminosity === "light" ? darkIcons : lightIcons}
+                />
+              </S.Icons>
+            )}
+
+            <S.Icons isLighty={luminosity === "light"}>
+              <AccountCircleIcon
+                style={luminosity === "light" ? darkIcons : lightIcons}
+              />
+            </S.Icons>
+          </S.SecondGroup>
+        </S.SideContainer>
+
+        <S.SideMenu>
+          <S.MakeItColumn>
+            <S.TitleBar>
+              <p className="title-bar-p">Explorer</p>
+            </S.TitleBar>
+            <S.SideOptions>
+              
+            </S.SideOptions>
+          </S.MakeItColumn>
+        </S.SideMenu>
       </S.MakeItRow>
     </>
   );

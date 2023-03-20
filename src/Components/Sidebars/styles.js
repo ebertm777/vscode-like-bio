@@ -42,10 +42,37 @@ export const MakeItRow = styled.div`
   flex-direction: row;
 `;
 
-
-export const SideMenu = styled.div`
- display: flex;
- flex-direction: column;
- height: 100%;
+export const MakeItColumn = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 `;
 
+export const SideMenu = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`;
+
+export const TitleBar = styled.section`
+  color: #fff;
+  font-size: 16px;
+  height: 60px;
+  width: 260px;
+  background: #21252b;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  .title-bar-p {
+    margin-left: 18px;
+  }
+`;
+
+export const SideOptions = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: #333842;
+`;
