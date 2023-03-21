@@ -102,7 +102,7 @@ export const AboutMe = styled.section`
   margin-top: 20px;
   color: #eaeff2;
   cursor: pointer;
-  
+
   ${(props) =>
     props.isLighty &&
     css`
