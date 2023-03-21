@@ -17,13 +17,21 @@ export const ContentContainer = styled.div`
     align-items: center;
     height: fit-content;
   }
+
+  .divish-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: fit-content;
+    margin-top: 100px;
+  }
 `;
 
 export const Pic = styled.img`
   object-fit: cover;
-  border-radius: 50%;
   width: 102px;
   height: 102px;
+  border-radius: 50%;
 `;
 
 export const Info = styled.div`
@@ -61,4 +69,23 @@ export const Nationality = styled.div`
   margin: 0;
   margin-left: 18px;
   margin-top: 16px;
+`;
+
+export const Information = styled.div`
+  text-align: left;
+  margin: 0;
+  margin-left: 18px;
+  margin-top: 16px;
+  font-size: 22px;
+
+  span {
+    text-align: left;
+    color: #f4f4f4;
+    margin: 0;
+  }
+`;
+
+export const MakeItColumn = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
