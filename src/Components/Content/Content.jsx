@@ -37,9 +37,14 @@ const Content = ({
           <div className="divish-2">
             <S.Information>
               <span>Mais sobre mim:</span>
+              <p>
+                Desenvolvedor de Front-end com dois anos de experiência
+                profissional. Experiencia em desenvolver aplicações Front-end
+                com tecnologia JavaScript e React, focando nas experiências de
+                usuário.
+              </p>
             </S.Information>
           </div>
-          <p>Teste</p>
         </S.MakeItColumn>
       )}
 

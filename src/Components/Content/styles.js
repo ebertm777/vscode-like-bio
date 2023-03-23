@@ -23,7 +23,7 @@ export const ContentContainer = styled.div`
     flex-direction: row;
     justify-content: flex-start;
     height: fit-content;
-    margin-top: 100px;
+    margin-top: 70px;
   }
 `;
 
@@ -72,6 +72,9 @@ export const Nationality = styled.div`
 `;
 
 export const Information = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap");
+  display: flex;
+  flex-direction: column;
   text-align: left;
   margin: 0;
   margin-left: 18px;
@@ -82,6 +85,16 @@ export const Information = styled.div`
     text-align: left;
     color: #f4f4f4;
     margin: 0;
+    color: #c157eb;
+  }
+
+  p {
+    font-family: "Roboto Mono", monospace;
+    margin: 0px;
+    margin-top: 5px;
+    color: #f4f4f4;
+    font-size: 20px;
+    padding-right: 100px;
   }
 `;
 
