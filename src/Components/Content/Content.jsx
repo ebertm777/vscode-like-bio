@@ -17,31 +17,30 @@ const Content = ({
       {content === "aboutMe" && (
         <S.MakeItColumn>
           <div className="divish">
-            <S.Pic src={INU} />
+            <S.Pic src={INU} isLighty={luminosity === "light"}/>
             <S.Info>
-              <S.Name>
+              <S.Name isLighty={luminosity === "light"}>
                 <span>Nome:</span> Eber Torres Macedo
               </S.Name>
-              <S.Age>
+              <S.Age isLighty={luminosity === "light"}>
                 <span>Idade:</span> 35
               </S.Age>
-              <S.BirthDate>
+              <S.BirthDate isLighty={luminosity === "light"}>
                 <span>Data de nascimento:</span> 02-04-1987
               </S.BirthDate>
-              <S.Nationality>
+              <S.Nationality isLighty={luminosity === "light"}>
                 <span>Nacionalidade:</span> Brasileira
               </S.Nationality>
             </S.Info>
           </div>
 
           <div className="divish-2">
-            <S.Information>
+            <S.Information isLighty={luminosity === "light"}>
               <span>Mais sobre mim:</span>
               <p>
-                Desenvolvedor de Front-end com dois anos de experiência
-                profissional. Experiencia em desenvolver aplicações Front-end
-                com tecnologia JavaScript e React, focando nas experiências de
-                usuário.
+                Desenvolvedor Front-end com dois anos de experiência
+                profissional desenvolvendo aplicações Front-end com tecnologia
+                JavaScript e React, focando nas experiências de usuário.
               </p>
             </S.Information>
           </div>

@@ -32,6 +32,13 @@ export const Pic = styled.img`
   width: 102px;
   height: 102px;
   border-radius: 50%;
+  border: 3px solid #f5f5f5;
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      border: 3px solid #21252b;
+    `}
 `;
 
 export const Info = styled.div`
@@ -48,6 +55,13 @@ export const Name = styled.p`
   text-align: left;
   margin: 0;
   margin-left: 18px;
+  color: #f5f5f5;
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      color: #21252b;
+    `}
 `;
 
 export const Age = styled.p`
@@ -55,6 +69,13 @@ export const Age = styled.p`
   margin: 0;
   margin-left: 18px;
   margin-top: 16px;
+  color: #f5f5f5;
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      color: #21252b;
+    `}
 `;
 
 export const BirthDate = styled.div`
@@ -62,6 +83,13 @@ export const BirthDate = styled.div`
   margin: 0;
   margin-left: 18px;
   margin-top: 16px;
+  color: #f5f5f5;
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      color: #21252b;
+    `}
 `;
 
 export const Nationality = styled.div`
@@ -69,6 +97,13 @@ export const Nationality = styled.div`
   margin: 0;
   margin-left: 18px;
   margin-top: 16px;
+  color: #f5f5f5;
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      color: #21252b;
+    `}
 `;
 
 export const Information = styled.div`
@@ -77,13 +112,12 @@ export const Information = styled.div`
   flex-direction: column;
   text-align: left;
   margin: 0;
-  margin-left: 18px;
   margin-top: 16px;
   font-size: 22px;
 
   span {
     text-align: left;
-    color: #f4f4f4;
+    color: #f5f5f5;
     margin: 0;
     color: #c157eb;
   }
@@ -92,10 +126,18 @@ export const Information = styled.div`
     font-family: "Roboto Mono", monospace;
     margin: 0px;
     margin-top: 5px;
-    color: #f4f4f4;
+    color: #f5f5f5;
     font-size: 20px;
     padding-right: 100px;
   }
+
+  ${(props) =>
+    props.isLighty &&
+    css`
+      p {
+        color: #21252b;
+      }
+    `}
 `;
 
 export const MakeItColumn = styled.div`
